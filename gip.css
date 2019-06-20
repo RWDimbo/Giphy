@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+button,
+div,
+form,
+input{
+    margin: 10px;
+}
+#buttons-view{
+    height: 75px;
+}
+#gifs-appear-here{
+    position: relative;
+    float: left;
+    width: 20.00%;
+    height: 200px;
+    padding: 10px;
+}
+
+
+    
