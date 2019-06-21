@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-image: url ("/images/Motion 06.jpg");
+    background-color: blueviolet;
+}
+
+
+
 button,
 div,
 form,
@@ -10,11 +17,11 @@ input{
 #buttons-view{
     height: 75px;
 }
-#gifs-appear-here{
+img{
     position: relative;
     float: left;
-    width: 20.00%;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     padding: 10px;
 }
 

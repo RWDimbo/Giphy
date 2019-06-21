@@ -1,18 +1,17 @@
-var subjects = ["Star Wars", "Street FIghter II", "Jonny Quest", "Elite Dangerous", "XCOM"];
+var subjects = ["Star Wars", "Street FIghter II", "Jonny Quest", "Elite Dangerous", "XCOM", "Star Trek","Lost in Space", "Killer Instinct"];
 
 function displayGifs() {
   ('displayGifs', this)
   var subjects = $(this).attr("data-name");
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + subjects + "&api_key=YG4Y7s542RabyCVPvWtSZdvlIzYe5NTF&limit=10"
-  (subjects);
-
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + subjects + "&api_key=YG4Y7s542RabyCVPvWtSZdvlIzYe5NTF&limit=10";
+ 
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function (response) {
     $("#gifs-appear-here").empty();
     var results = response.data;
-    (results);
+    
     for (var i = 0; i < results.length; i++) {
       // Omit mature content
       if (results[i].rating !== "r" && results[i].rating !== "PG-13") {
@@ -29,7 +28,7 @@ function displayGifs() {
         subjectImage.attr('data-animate', animated);
         subjectImage.attr('data-state', 'still');
 
-        gifDiv.append(ratingText);
+        //gifDiv.append(ratingText);
         gifDiv.append(subjectImage);
 
         $("#gifs-appear-here").prepend(gifDiv)
@@ -46,10 +45,7 @@ $(document).on("click", ".gifImage", function () {
   var animate = $(this).attr('data-animate')
   var still = $(this).attr('data-still')
   // If state = still, on click will animate the gif
- ("state", state)
- ("still", still)
- ("animate", animate)
-  if (state === 'still') {
+    if (state === 'still') {
     $(this).attr('src', animate);
     $(this).attr('data-state', 'animate');
   }
