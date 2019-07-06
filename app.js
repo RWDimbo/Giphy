@@ -1,5 +1,5 @@
-var subjects = ["Star Wars", "Street FIghter II", "Jonny Quest", "Elite Dangerous", "XCOM", "Star Trek","Lost in Space", "Killer Instinct"];
-
+var subjects = ["Bunnies", "Giraffes", "Kittens", "Puppies", "Pandas", "Bears"," Skunks", "Hedgehogs"];
+//var subjects =[""];
 function displayGifs() {
   ('displayGifs', this)
   var subjects = $(this).attr("data-name");
