@@ -1,12 +1,19 @@
 * {
     box-sizing: border-box;
 }
-body {
-    background-image: url ("/images/Motion 06.jpg");
-    background-color: blueviolet;
+.display{
+    background-repeat: no-repeat;
+    background-image: url("./images/space_background.jpg"); 
+    -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
 }
 
-
+.inputid{
+    color: white;
+}
 
 button,
 div,
